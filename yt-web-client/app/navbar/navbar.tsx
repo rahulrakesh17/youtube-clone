@@ -1,7 +1,15 @@
-export default function Navbar(){
-    return(
-        <div>
-            <h1>Navbar</h1>
-        </div>
-    )
+import Image from "next/image";
+import Link from "next/link";
+
+import styles from "./navbar.module.css";
+
+export default function Navbar() {
+  return (
+    <nav className={styles.nav}>
+      <Link href="/">
+        <Image width={90} height={20}
+          src="/youtube-logo.svg" alt="YouTube Logo"/>
+      </Link>
+    </nav>
+  );
 }
