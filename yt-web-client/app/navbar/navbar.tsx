@@ -1,7 +1,7 @@
 'use client'
 import Image from "next/image";
 import Link from "next/link";
-
+import Upload from "./upload";
 import styles from "./navbar.module.css";
 import SignIn from "./sign-in";
 import { User } from "firebase/auth";
@@ -22,7 +22,11 @@ export default function Navbar() {
         <Image width={90} height={20}
           src="/youtube-logo.svg" alt="YouTube Logo"/>
       </Link>
-      <SignIn user={user}/>
+      {
+        user && <Upload />
+      }
+      <SignIn user={user} />
     </nav>
   );
+
 }
