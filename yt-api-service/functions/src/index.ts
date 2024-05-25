@@ -8,7 +8,7 @@ import {onCall} from "firebase-functions/v2/https";
 
 const storage = new Storage();
 
-const rawVideoBucketName = "nc-yt-raw-videos";
+const rawVideoBucketName = "rahul-yt-processed-videos";
 
 
 initializeApp();
