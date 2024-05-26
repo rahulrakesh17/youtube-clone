@@ -2,11 +2,11 @@
 import { initializeApp } from "firebase/app";
 import { getAnalytics } from "firebase/analytics";
 
-import { getAuth, 
+import { getAuth,
     signInWithPopup,
-    GoogleAuthProvider, 
-    onAuthStateChanged, 
-    User } 
+    GoogleAuthProvider,
+    onAuthStateChanged,
+    User }
 from "firebase/auth";
 
 
